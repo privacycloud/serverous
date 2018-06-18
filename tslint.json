@@ -1,0 +1,6 @@
+{
+  "extends": "@privacycloud/tslint-config/server",
+  "rules": {
+    "variable-name": [true, "allow-leading-underscore"]
+  }
+}

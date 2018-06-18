@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    command: npm run watch
+    environment:
+      - OPEN_API_SPEC=http://petstore.swagger.io/v2/swagger.json
+      - PORT=8080
+    ports:
+      - 8080:8080
+    volumes:
+      - ./mocks:/etc/mocks
+      - .:/home/app/api
+      - /home/app/api/node_modules
