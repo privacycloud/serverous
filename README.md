@@ -20,7 +20,7 @@ version: '3'
 services:
   api:
     # Load the serverous image from the registry
-    image: privacycloud/serverous:latest
+    image: privacycloud/serverous:1.0.0
     # Point to the OpenAPI spec that you want to mock
     environment:
       - OPEN_API_SPEC=http://example.com/swagger.json
