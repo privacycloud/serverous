@@ -1,5 +1,7 @@
 # Serverous
 
+[![Build Status](https://travis-ci.org/PrivacyCloud/serverous.svg?branch=master)](https://travis-ci.org/PrivacyCloud/serverous)
+
 <!-- TOC depthFrom:2 depthTo:3 -->
 
 - [Usage](#usage)
