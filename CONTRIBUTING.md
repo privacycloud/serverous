@@ -58,12 +58,12 @@ docker-compose up --build
 
 The command above will create a container with all the required dependencies and start a mock server at `localhost:8080`.
 
-#### Local `@types/*`
+#### Local `types definition`
 
-In order to have access to `@types/*` packages from your editor of choice, you may need to locally install dev depedencies by typing the following command at the root of the project:
+In order to have access to `types definition` from your editor of choice, you may need to locally install depedencies by typing the following command at the root of the project:
 
 ```sh
-npm install --only=dev
+npm install
 ```
 
 ### Coding conventions
