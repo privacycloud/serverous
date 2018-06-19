@@ -31,7 +31,7 @@
 
 1. Open a new GitHub pull request with the patch.
 1. Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
-1. Before submitting, please ensure that your changes follow the current coding conventions for this project.
+1. Before submitting, please ensure that your changes follow the current coding conventions for this project and run the test suite including your own tests to ensure all of them pass.
 
 ## Contributing to `serverous` code
 
@@ -40,7 +40,7 @@
 1. Open a new issue explaining the feature.
 1. If the issue collects enough possitive feedback, fork the project and create a new feature branch from `master` to apply your changes.
 1. Once you are ready, open a new GitHub pull request to merge your changes back into `master`.
-1. Before submitting, please ensure that your changes follow the current coding conventions for this project.
+1. Before submitting, please ensure that your changes follow the current coding conventions for this project and run the test suite including your own tests to ensure all of them pass.
 
 #### Features we are not considering at this moment
 
