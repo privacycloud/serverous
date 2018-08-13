@@ -6,7 +6,16 @@ const { PORT = 3000 } = process.env;
 
 (async () => {
   try {
-    const server = new Server({ port: PORT });
+    const server = new Server({
+      port: PORT,
+      routes: {
+        cors: {
+          additionalHeaders: ['*'],
+          credentials: true,
+          origin: ['*'],
+        },
+      },
+    });
 
     await mountPlugins(server);
 
