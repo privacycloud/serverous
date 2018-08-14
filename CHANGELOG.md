@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [1.1.1] - 2018-08-14
+
+### Added
+
+- Support to inject additional accepted CORS headers through environment variables
+
 ## [1.1.0] - 2018-08-14
 
 ### Added

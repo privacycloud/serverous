@@ -2,7 +2,7 @@ import { Server } from 'hapi';
 
 import { mount as mountPlugins } from './plugins';
 
-const { PORT = 3000 } = process.env;
+const { CORS_ADDITIONAL_HEADERS = '', PORT = 3000 } = process.env;
 
 (async () => {
   try {
@@ -10,7 +10,7 @@ const { PORT = 3000 } = process.env;
       port: PORT,
       routes: {
         cors: {
-          additionalHeaders: ['*'],
+          additionalHeaders: CORS_ADDITIONAL_HEADERS.split(','),
           credentials: true,
           origin: ['*'],
         },
