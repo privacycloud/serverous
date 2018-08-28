@@ -2,11 +2,20 @@ import { Server } from 'hapi';
 
 import { mount as mountPlugins } from './plugins';
 
-const { PORT = 3000 } = process.env;
+const { CORS_ADDITIONAL_HEADERS = '', PORT = 3000 } = process.env;
 
 (async () => {
   try {
-    const server = new Server({ port: PORT });
+    const server = new Server({
+      port: PORT,
+      routes: {
+        cors: {
+          additionalHeaders: CORS_ADDITIONAL_HEADERS.split(','),
+          credentials: true,
+          origin: ['*'],
+        },
+      },
+    });
 
     await mountPlugins(server);
 

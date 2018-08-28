@@ -29,9 +29,10 @@
 
 ### Did you write a patch that fixes a bug?
 
+1. Remember to add test cases to ensure that the issue has been fixed.
 1. Open a new GitHub pull request with the patch.
 1. Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
-1. Before submitting, please ensure that your changes follow the current coding conventions for this project.
+1. Before submitting, please ensure that your changes follow the current coding conventions for this project and the [test suite](#running-tests) passes without errors.
 
 ## Contributing to `serverous` code
 
@@ -39,8 +40,9 @@
 
 1. Open a new issue explaining the feature.
 1. If the issue collects enough possitive feedback, fork the project and create a new feature branch from `master` to apply your changes.
+1. Please, add or update any test case which may be affected by these changes.
 1. Once you are ready, open a new GitHub pull request to merge your changes back into `master`.
-1. Before submitting, please ensure that your changes follow the current coding conventions for this project.
+1. Before submitting, please ensure that your changes follow the current coding conventions for this project and the [test suite](#running-tests) passes without errors.
 
 #### Features we are not considering at this moment
 
@@ -58,12 +60,12 @@ docker-compose up --build
 
 The command above will create a container with all the required dependencies and start a mock server at `localhost:8080`.
 
-#### Local `@types/*`
+#### Local types definition
 
-In order to have access to `@types/*` packages from your editor of choice, you may need to locally install dev depedencies by typing the following command at the root of the project:
+In order to have access to types definition from your editor of choice, you may need to locally install depedencies by typing the following command at the root of the project:
 
 ```sh
-npm install --only=dev
+npm install
 ```
 
 ### Coding conventions

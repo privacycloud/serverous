@@ -19,6 +19,7 @@ export async function mount(server: Server): Promise<void> {
   return server.register({
     options: {
       api: openApi.getSpec(),
+      cors: true,
       handlers: openApi.toHandlers(),
     },
     plugin: HapiOpenApi,
