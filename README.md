@@ -8,6 +8,12 @@
 
 <!-- /TOC -->
 
+---
+
+Project Maintainer: [@sergioalvz](https://github.com/sergioalvz)
+
+---
+
 ## Usage
 
 Using `serverous` with `docker-compose` is, by far, the easiest way to setup the project. Since `serverous` is distributed as a Docker image, it can be easily loaded as a Compose service.
