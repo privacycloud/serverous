@@ -43,7 +43,7 @@
     "good-console": "^7.1.0",
     "good-squeeze": "^5.1.0",
     "hapi": "^17.7.0",
-    "hapi-openapi": "^1.0.5",
+    "hapi-openapi": "^1.2.0",
     "lodash": "^4.17.11",
     "typescript": "^3.1.6"
   },
