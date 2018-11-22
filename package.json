@@ -20,7 +20,7 @@
     "@types/boom": "^7.2.1",
     "@types/faker": "^4.1.2",
     "@types/fs-extra": "^5.0.4",
-    "@types/hapi": "^17.0.12",
+    "@types/hapi": "^17.6.4",
     "@types/jest": "^23.3.9",
     "@types/lodash": "^4.14.118",
     "@types/node": "^8.10.20",
@@ -42,7 +42,7 @@
     "good": "^8.1.1",
     "good-console": "^7.1.0",
     "good-squeeze": "^5.1.0",
-    "hapi": "^17.5.1",
+    "hapi": "^17.7.0",
     "hapi-openapi": "^1.0.5",
     "lodash": "^4.17.11",
     "typescript": "^3.1.6"
