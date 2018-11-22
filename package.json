@@ -22,7 +22,7 @@
     "@types/fs-extra": "^5.0.4",
     "@types/hapi": "^17.0.12",
     "@types/jest": "^23.3.9",
-    "@types/lodash": "^4.14.109",
+    "@types/lodash": "^4.14.118",
     "@types/node": "^8.10.20",
     "@types/swagger-schema-official": "^2.0.10",
     "jest": "^23.6.0",
@@ -44,7 +44,7 @@
     "good-squeeze": "^5.1.0",
     "hapi": "^17.5.1",
     "hapi-openapi": "^1.0.5",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "typescript": "^3.1.6"
   },
   "jest": {
