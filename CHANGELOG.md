@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [1.1.2] - 2019-05-17
+
+### Fixed
+
+- <https://github.com/privacycloud/serverous/issues/3>
+
 ## [1.1.1] - 2018-08-14
 
 ### Added
