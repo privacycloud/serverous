@@ -1,13 +1,13 @@
 import HapiOpenApi from 'hapi-openapi';
 
-import { Server } from 'hapi';
+import { Server, ServerRegisterPluginObject } from 'hapi';
 
 import { OpenApi } from '../entities/OpenApi';
 import { AuthStrategies } from '../generators/AuthStrategies';
 
 const { OPEN_API_SPEC } = process.env;
 
-export async function mount(server: Server): Promise<void> {
+export async function plugin(server: Server): Promise<ServerRegisterPluginObject<any>> {
   if (!OPEN_API_SPEC) {
     throw new Error('OPEN_API_SPEC is null or it does not exist');
   }
@@ -16,12 +16,12 @@ export async function mount(server: Server): Promise<void> {
 
   new AuthStrategies({ server, openApi }).generate();
 
-  return server.register({
+  return {
     options: {
       api: openApi.getSpec(),
       cors: true,
       handlers: openApi.toHandlers(),
     },
     plugin: HapiOpenApi,
-  });
+  };
 }

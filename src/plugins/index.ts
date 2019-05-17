@@ -1,9 +1,8 @@
-import { Server } from 'hapi';
+import { Server, ServerRegisterPluginObject } from 'hapi';
 
-import { mount as mountGood } from './good';
-import { mount as mountOpenApi } from './openapi';
+import { plugin as good } from './good';
+import { plugin as openapi } from './openapi';
 
-export async function mount(server: Server) {
-  mountGood(server);
-  mountOpenApi(server);
+export async function plugin(server: Server): Promise<Array<ServerRegisterPluginObject<any>>> {
+  return [await good(), await openapi(server)];
 }
