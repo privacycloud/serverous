@@ -1,9 +1,8 @@
 import Good from 'good';
+import { ServerRegisterPluginObject } from 'hapi';
 
-import { Server } from 'hapi';
-
-export function mount(server: Server): Promise<void> {
-  return server.register({
+export async function plugin(): Promise<ServerRegisterPluginObject<any>> {
+  return {
     options: {
       ops: {
         interval: 1000,
@@ -23,5 +22,5 @@ export function mount(server: Server): Promise<void> {
       },
     },
     plugin: Good,
-  });
+  };
 }
